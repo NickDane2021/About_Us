@@ -2,12 +2,34 @@
 
 /* font-family: "ALK Rounded Mtav Med", sans-serif; */
 
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: 0.5s;
   font-family: "ALK Rounded Mtav Med", sans-serif;
+}
+
+/* 
+tetri xazi low-res fix */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 .title {
@@ -424,10 +446,16 @@ i {
   .title {
     font-size: 8rem;
   }
+  .title:hover {
+    font-size: 8.2rem;
+  }
 }
 @media only screen and (max-width: 1143px) {
   .title {
     font-size: 6rem;
+  }
+  .title:hover {
+    font-size: 6.2rem;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -440,6 +468,51 @@ i {
     height: 900px;
   }
 }
+
+@media only screen and (max-width: 605px) {
+  .contactName {
+    font-size: 1.5rem;
+  }
+  .contactName:hover {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 461px) {
+  .contactName {
+    font-size: 1rem;
+  }
+  .contactName:hover {
+    font-size: 1.1rem;
+  }
+  .fa-envelope {
+    font-size: 3rem;
+  }
+  .fa-envelope:hover {
+    font-size: 3.1rem;
+  }
+  .fa-facebook-square {
+    font-size: 3rem;
+  }
+  .fa-facebook-square:hover {
+    font-size: 3.1rem;
+  }
+}
+@media only screen and (max-width: 305px) {
+  .contactName {
+    font-size: 0.6rem;
+  }
+  .contactName:hover {
+    font-size: 0.7rem;
+  }
+  .fa-envelope {
+    font-size: 2rem;
+  }
+  .fa-facebook-square {
+    font-size: 2rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .second_part {
     height: 1000px;
@@ -460,11 +533,69 @@ i {
     align-items: center;
   }
   .logo {
-    width: 100%;
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .logo:hover {
+    width: 90.5%;
   }
 }
 @media only screen and (max-width: 541px) {
   .title {
     font-size: 4rem;
+  }
+  .title:hover {
+    font-size: 4.2rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cardDesc {
+    margin-bottom: 3rem;
+  }
+  .third_part {
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 363px) {
+  .goals {
+    font-size: 2rem;
+  }
+  .goals:hover {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .title {
+    font-size: 2rem;
+  }
+  .title:hover {
+    font-size: 2.1rem;
+  }
+  .first_part {
+    height: 400px;
+  }
+  .second_part {
+    height: 1500px;
+  }
+}
+
+@media only screen and (max-width: 309px) {
+  .second_part {
+    height: 1800px;
+  }
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  .aboutTitle:hover {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 249px) {
+  .second_part {
+    height: 2000px;
   }
 }
